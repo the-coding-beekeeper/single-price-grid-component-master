@@ -1,0 +1,159 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+:root {
+  --cyan: hsl(179, 62%, 43%);
+  --yellow: hsl(71, 73%, 54%);
+  --gray: hsl(204, 43%, 93%);
+  --blue: hsl(218, 22%, 67%);
+}
+body {
+  font-size: 16px;
+  font-family: 'Karla', sans-serif;
+  max-width: 100vw;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: var(--gray);
+}
+.sr-only {
+  position: absolute;
+  left: -10000px;
+  width: 1px;
+  height: 1px;
+  top: auto;
+  overflow: hidden;
+}
+.content-card {
+  display: flex;
+  flex-direction: column;
+  width: 15.6rem;
+  border-radius: 4px;
+  overflow: hidden;
+  background-color: white;
+}
+article {
+  padding: 0 1.2rem;
+}
+h2 {
+  font-size: 15px;
+  margin-top: 1.5rem;
+  }
+h3 {
+  font-size: 12px;
+  margin-top: 1.5rem;
+}
+p {
+  font-size: 11px;
+  line-height: 1.7;
+}
+.join {
+  color: var(--blue);
+}
+.join h2 {
+  color: var(--cyan);
+}
+.join h3 {
+  color: var(--yellow);
+  font-weight:700;
+}
+.join p {
+  margin-top: 1rem;
+  margin-bottom: 1.8rem;
+}
+.subscription {
+  background-color: var(--cyan);
+  color: white;
+}
+.price {
+  font-size: 24px;
+  font-weight: bold;
+}
+.price-offer {
+  display: flex;
+  align-items: center;
+}
+.monthly {
+  opacity: 0.5;
+}
+.access {
+  font-size: 12.5px;
+}
+.why-us {
+  background-color: hsla(179, 62%, 43%, 0.8);
+  color: white;
+}
+.btn {
+  background-color: var(--yellow);
+  border: none;
+  color: white;
+  width: 90%;
+  height: 2.3rem;
+  border-radius: 5px;
+  margin-top: 1.3rem;
+  margin-bottom: 1.2rem;
+  box-shadow: 5px 5px 10px hsla(180, 1%, 27%, 0.2);
+}
+.why-us p {
+  margin-top: 0.7rem;
+  margin-bottom: 1rem;
+  line-height: 1.5;
+}
+
+.attribution { font-size: 11px; text-align: center; }
+.attribution a { color: hsl(228, 45%, 44%); }
+
+@media (min-width: 700px) {
+  .content-card {
+    width: 31.8rem;
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+  .join {
+    width: 100%;
+    height: 10.8rem;
+  }
+  .subscription, .why-us {
+    width: 50%;
+    height:12.9rem;
+  }
+  .join h2 {
+    margin-top: 2rem;
+    font-size: 18px;
+  }
+  .join h3 {
+    margin-top: 1.2rem;
+    font-size: 14px;
+  }
+  .join p {
+    font-size: 12.5px;
+    margin: 0.5rem 0;
+  }
+  article {
+    padding: 0 2rem;
+  }
+  .subscription h2, .why-us h2 {
+    line-height: 1;
+    margin-top: 2rem;
+    margin-bottom: 1.2rem;
+  }
+  .price {
+    line-height: 1;
+    margin-bottom: 0.3rem;
+  }
+  .access {
+    margin-bottom: 0.8rem;
+  }
+  .btn {
+    margin: 0.5rem 0;
+  }
+  .why-us p {
+    line-height: 1.45;
+    margin-top: 0.3rem;
+    color: HSL(0, 0%, 100%, 0.6)
+  }
+}
